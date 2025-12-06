@@ -1,1 +1,53 @@
-# go-sample-api
+# sample-cart-system
+
+## Setup
+### Local Database
+
+```
+brew install sqldef/sqldef/mysqldef
+```
+
+Reflect the local database schema into structure.sql
+```
+make dump-schema
+```
+
+Update the local database schema based on the contents of structure.sql
+```
+make apply-schema
+```
+
+### Set .env file
+```
+mv .env.sample .env
+```
+
+## Using
+### start api server
+
+```
+make server
+```
+
+### code generate
+Code generation using oapi-codegen
+```
+make generate
+```
+
+## API tech stack
+| Type                 | Value          |
+|----------------------|----------------|
+| Server-side Language | Go             |
+| Framework            | Echo           |
+| RDBMS                | MySQL          |
+| Schema Management    | structure.sql  |
+| ORM                  | GORM           |
+| Environment Variables| Viper          |
+| Authentication       | go-jose        |
+| Logging              | slog           |
+| Linter               | golangci-lint  |
+| Test Helper          | testfixtures   |
+| Environment Setup    | Docker         |
+| Hot Reloading        | air            |
+

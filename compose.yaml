@@ -1,0 +1,13 @@
+services:
+  db:
+    image: mysql:8
+    env_file:
+      - .env
+    ports:
+      - 3306:3306 # ホストのポート3306とMySQLコンテナのポート3306をつなぐ
+    volumes:
+      - db_data:/var/lib/mysql # /var/lib/mysqlに保存されるMySQLのデータをコンテナの外のDocker Volumeにマウントする
+
+volumes:
+  db_data:
+
