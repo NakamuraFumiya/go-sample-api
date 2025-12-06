@@ -1,4 +1,4 @@
-# sample-cart-system
+# go-sample-api
 ## Sample Usage
 ```
 curl -X POST http://localhost:8080/v1/signup \
