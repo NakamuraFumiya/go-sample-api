@@ -1,14 +1,12 @@
 package router
 
 import (
-	"fmt"
-
+	"github.com/fumiyanakamura/go-sample-api/presentation/internalapi/v1/auth/signup"
 	"github.com/labstack/echo/v4"
 )
 
 func RegisterRoutes(e *echo.Echo) {
 	v1 := e.Group("/v1")
-	fmt.Println(v1)
 
-	// v1.POST("/users", userCreate.NewController().Do)
+	v1.POST("/signup", signup.NewController().Do)
 }
