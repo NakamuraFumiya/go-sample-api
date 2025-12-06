@@ -1,4 +1,14 @@
 # sample-cart-system
+## Sample Usage
+```
+curl -X POST http://localhost:8080/v1/signup \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "test_name",
+    "login_id": "test_login_id",
+    "password": "test_password"
+  }'
+```
 
 ## Setup
 ### Local Database
