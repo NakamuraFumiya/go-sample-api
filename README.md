@@ -30,10 +30,7 @@ make server
 ```
 
 ### code generate
-Code generation using oapi-codegen
-```
-make generate
-```
+TBD
 
 ## API tech stack
 | Type                 | Value          |
